@@ -1,6 +1,6 @@
 const PokemonideListiElement = (props) => {
     return (
-        <div onClick={() => { props.pariPokemoniInfo(props.pokemon.url) }}>{props.pokemon.name}</div>
+        <div onClick={() => { props.pariPokemoniInfo(props.pokemon.url) }}>{props.pokemon.url.split('/')[6]} {props.pokemon.name}</div>
     )
 }
 
